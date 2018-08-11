@@ -1,0 +1,255 @@
+Tobject
+v7
+r0
+t377974377.427682
+cCheck dependencies
+cProcessPCH /var/folders/1g/gt2sdf5d48v9_6h6srrxnzxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch.gch object_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/object.build/Debug/object.build/Objects-normal/i386/object.o /Users/Bernd/Documents/LearningCocoa/object/object/object.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/object.build/Debug/object.build/Objects-normal/i386/Song.o /Users/Bernd/Documents/LearningCocoa/object/object/Song.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/object.build/Debug/object.build/Objects-normal/i386/hmg.o /Users/Bernd/Documents/LearningCocoa/object/object/hmg.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/object.build/Debug/object.build/Objects-normal/i386/movies.o /Users/Bernd/Documents/LearningCocoa/object/object/movies.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/object.build/Debug/object.build/Objects-normal/i386/lebensmittel.o /Users/Bernd/Documents/LearningCocoa/object/object/lebensmittel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/object normal i386
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004BEDC55C00000000000000EE
+t1273873756
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004864A1C900000000000012EE
+t1214554569
+s4846
+
+N/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004F9D06A60000000000942520
+t1335690918
+s9708832
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/Song.h
+c000000004C5C84B9000000000000016B
+t1281131705
+s363
+i<Foundation/Foundation.h>
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/Song.m
+c000000004C5C855900000000000001F5
+t1281131865
+s501
+i"Song.h"
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/object
+t1347391263
+s30436
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/Song.o
+t1340560755
+s7216
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/hmg.o
+t1340657150
+s7200
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/hmg.s
+t1340656429
+s25610
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/lebensmittel.o
+t1347391263
+s8316
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/movies.o
+t1341646998
+s8696
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/object.LinkFileList
+c00000000504F8BCA000000000000024F
+t1347390410
+s591
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/object.o
+t1347389168
+s31368
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/hmg.h
+c000000004FE8CD74000000000000014D
+t1340657012
+s333
+i<Foundation/Foundation.h>
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/hmg.m
+c000000004FE8CDFE0000000000000221
+t1340657150
+s545
+i"hmg.h"
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/lebensmittel.h
+c00000000504F8BCA0000000000000212
+t1347390410
+s530
+i<Foundation/Foundation.h>
+i<movies.h>
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/lebensmittel.m
+c00000000504F8F190000000000000240
+t1347391257
+s576
+i"lebensmittel.h"
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/movies.h
+c000000004FF7E63F00000000000001CE
+t1341646399
+s462
+i<Foundation/Foundation.h>
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/movies.m
+c000000004FF7E89600000000000002D6
+t1341646998
+s726
+i"movies.h"
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/object.m
+c00000000504F86EC0000000000006D70
+t1347389164
+s28016
+i<Foundation/Foundation.h>
+i"hmg.h"
+i"movies.h"
+
+N/Users/Bernd/Documents/LearningCocoa/object/object/object_Prefix.pch
+c000000004C5C4D0D000000000000009A
+t1281117453
+s154
+i<Foundation/Foundation.h>
+
+N/var/folders/0x/0xyVNOsfG6qZFc4nX5Ozv++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch.gch
+t1281117529
+s41682896
+
+N/var/folders/1g/gt2sdf5d48v9_6h6srrxnzxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch.gch
+t1340560755
+s41682896
+
+C<C0006:'CompileC hmg.o':P8:W0>
+s362349229.494354
+e362349229.598474
+r1
+xCompileC
+xbuild/object.build/Debug/object.build/Objects-normal/i386/hmg.o
+x/Users/Bernd/Documents/LearningCocoa/object/object/hmg.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/Bernd/Documents/LearningCocoa/object/object/hmg.m362349229#362349229#0(0"0(0#0#56"/Users/Bernd/Documents/LearningCocoa/object/object/hmg.m17219487584#1148"    cd /Users/Bernd/Documents/LearningCocoa/object/object    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/object.hmap -F/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug -I/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/include -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources/i386 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources -include /var/folders/1g/gt2sdf5d48v9_6h6srrxnzxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch -S /Users/Bernd/Documents/LearningCocoa/object/object/hmg.m -o /Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/hmg.s0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies377974377#377974377#0(0"0(0#1#0"17249146912#0"0#
+
+CCompileC build/object.build/Debug/object.build/Objects-normal/i386/Song.o /Users/Bernd/Documents/LearningCocoa/object/object/Song.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s362253555.241573
+e362253556.626382
+r1
+xCompileC
+xbuild/object.build/Debug/object.build/Objects-normal/i386/Song.o
+x/Users/Bernd/Documents/LearningCocoa/object/object/Song.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/Bernd/Documents/LearningCocoa/object/object/Song.m362253555#362253556#0(0"0(0#0#57"/Users/Bernd/Documents/LearningCocoa/object/object/Song.m2#1150"    cd /Users/Bernd/Documents/LearningCocoa/object/object    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/object.hmap -F/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug -I/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/include -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources/i386 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources -include /var/folders/1g/gt2sdf5d48v9_6h6srrxnzxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch -c /Users/Bernd/Documents/LearningCocoa/object/object/Song.m -o /Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/Song.o0#
+
+CCompileC build/object.build/Debug/object.build/Objects-normal/i386/hmg.o /Users/Bernd/Documents/LearningCocoa/object/object/hmg.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s362349950.398520
+e362349950.878377
+r1
+xCompileC
+xbuild/object.build/Debug/object.build/Objects-normal/i386/hmg.o
+x/Users/Bernd/Documents/LearningCocoa/object/object/hmg.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/Bernd/Documents/LearningCocoa/object/object/hmg.m362349950#362349950#0(0"0(0#0#56"/Users/Bernd/Documents/LearningCocoa/object/object/hmg.m2#1148"    cd /Users/Bernd/Documents/LearningCocoa/object/object    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/object.hmap -F/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug -I/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/include -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources/i386 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources -include /var/folders/1g/gt2sdf5d48v9_6h6srrxnzxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch -c /Users/Bernd/Documents/LearningCocoa/object/object/hmg.m -o /Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/hmg.o0#
+
+CCompileC build/object.build/Debug/object.build/Objects-normal/i386/lebensmittel.o /Users/Bernd/Documents/LearningCocoa/object/object/lebensmittel.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s369084062.891477
+e369084063.020975
+r1
+xCompileC
+xbuild/object.build/Debug/object.build/Objects-normal/i386/lebensmittel.o
+x/Users/Bernd/Documents/LearningCocoa/object/object/lebensmittel.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/Bernd/Documents/LearningCocoa/object/object/lebensmittel.m369084062#369084063#0(0"0(0#0#65"/Users/Bernd/Documents/LearningCocoa/object/object/lebensmittel.m2#1166"    cd /Users/Bernd/Documents/LearningCocoa/object/object    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/object.hmap -F/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug -I/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/include -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources/i386 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources -include /var/folders/1g/gt2sdf5d48v9_6h6srrxnzxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch -c /Users/Bernd/Documents/LearningCocoa/object/object/lebensmittel.m -o /Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/lebensmittel.o0#
+
+CCompileC build/object.build/Debug/object.build/Objects-normal/i386/movies.o /Users/Bernd/Documents/LearningCocoa/object/object/movies.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s363339798.299607
+e363339798.696255
+r1
+xCompileC
+xbuild/object.build/Debug/object.build/Objects-normal/i386/movies.o
+x/Users/Bernd/Documents/LearningCocoa/object/object/movies.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/Bernd/Documents/LearningCocoa/object/object/movies.m363339798#363339798#0(0"0(0#0#59"/Users/Bernd/Documents/LearningCocoa/object/object/movies.m2#1154"    cd /Users/Bernd/Documents/LearningCocoa/object/object    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/object.hmap -F/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug -I/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/include -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources/i386 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources -include /var/folders/1g/gt2sdf5d48v9_6h6srrxnzxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch -c /Users/Bernd/Documents/LearningCocoa/object/object/movies.m -o /Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/movies.o0#
+
+CCompileC build/object.build/Debug/object.build/Objects-normal/i386/object.o /Users/Bernd/Documents/LearningCocoa/object/object/object.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s369081964.910710
+e369081968.861092
+r1
+xCompileC
+xbuild/object.build/Debug/object.build/Objects-normal/i386/object.o
+x/Users/Bernd/Documents/LearningCocoa/object/object/object.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/Bernd/Documents/LearningCocoa/object/object/object.m369081964#369081968#0(0"0(0#0#59"/Users/Bernd/Documents/LearningCocoa/object/object/object.m17203825376#1154"    cd /Users/Bernd/Documents/LearningCocoa/object/object    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/object.hmap -F/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug -I/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/include -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources/i386 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources -include /var/folders/1g/gt2sdf5d48v9_6h6srrxnzxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch -c /Users/Bernd/Documents/LearningCocoa/object/object/object.m -o /Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/object.o0#
+
+CLd /Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/object normal i386
+s369084063.027714
+e369084063.048314
+r1
+xLd
+x/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/object
+xnormal
+xi386
+lSLF07#2@74"Link /Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/object369084063#369084063#0(0"0(0#0#0"2#572"    cd /Users/Bernd/Documents/LearningCocoa/object/object    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk -L/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug -F/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug -filelist /Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/Objects-normal/i386/object.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -o /Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/object0#
+
+CProcessPCH /var/folders/0x/0xyVNOsfG6qZFc4nX5Ozv++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch.gch object_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s302810326.873110
+e302810329.673344
+r1
+xProcessPCH
+x/var/folders/0x/0xyVNOsfG6qZFc4nX5Ozv++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch.gch
+xobject_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile object_Prefix.pch302810326#302810329#0(0"0(0#0#68"/Users/Bernd/Documents/LearningCocoa/object/object/object_Prefix.pch4300911832#1051"    cd /Users/Bernd/Documents/LearningCocoa/object/object    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/object.hmap -F/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug -I/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/include -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources/i386 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources -c /Users/Bernd/Documents/LearningCocoa/object/object/object_Prefix.pch -o /var/folders/0x/0xyVNOsfG6qZFc4nX5Ozv++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/1g/gt2sdf5d48v9_6h6srrxnzxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch.gch object_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s362253547.497636
+e362253555.239751
+r1
+xProcessPCH
+x/var/folders/1g/gt2sdf5d48v9_6h6srrxnzxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch.gch
+xobject_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile object_Prefix.pch362253547#362253555#0(0"0(0#0#68"/Users/Bernd/Documents/LearningCocoa/object/object/object_Prefix.pch17238700768#1047"    cd /Users/Bernd/Documents/LearningCocoa/object/object    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/object.hmap -F/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug -I/Users/Bernd/Documents/LearningCocoa/object/object/build/Debug/include -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources/i386 -I/Users/Bernd/Documents/LearningCocoa/object/object/build/object.build/Debug/object.build/DerivedSources -c /Users/Bernd/Documents/LearningCocoa/object/object/object_Prefix.pch -o /var/folders/1g/gt2sdf5d48v9_6h6srrxnzxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/object_Prefix-asjksbnwwgsljibmtawehulgcttw/object_Prefix.pch.gch0#
+
