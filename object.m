@@ -17,24 +17,28 @@ int main (int argc, const char * argv[]) {
 	[movie1 setYear:@"2010"];
 	[movie1 setFormat:@"BD+Digital Copy"];
 	[movie1 setTime:@"Extended Cut 134 Min."];
-	
+    [movie1 setis3d:YES];
+    
 	Movie * movie2 = [[Movie alloc]init];
 	[movie2 setTitle:@"Der Baader Meinhof Komplex"];
 	[movie2 setYear:@"2008"];
 	[movie2 setFormat:@"BD"];
 	[movie2 setTime:@"149 Min."];
+    [movie2 setis3d:YES];
 	
 	Movie * movie3 = [[Movie alloc]init];
 	[movie3 setTitle:@"Casino Royale"];
 	[movie3 setYear:@"2009"];
 	[movie3 setFormat:@"BD"];
 	[movie3 setTime:@"144 Min."];
+    [movie3 setis3d:YES];
 	
 	Movie * movie4 = [[Movie alloc]init];
 	[movie4 setTitle:@"Das Ding"];
 	[movie4 setYear:@"1982"];
 	[movie4 setFormat:@"BD"];
 	[movie4 setTime:@"uncut 109 Min."];
+    [movie4 setis3d:YES];
 	
 	Movie * movie5 = [[Movie alloc]init];
 	[movie5 setTitle:@"Gladiator"];

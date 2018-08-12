@@ -27,6 +27,6 @@
 -(NSString *)time;
 -(void)setTime:(NSString *)newTime;
 -(bool *)is3d;
--(void)set3d:(bool *)newis3d;
+-(void)setis3d:(bool *)newis3d;
 
 @end

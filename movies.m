@@ -65,7 +65,7 @@
     return is3d;
 }
 
--(void)is3d:(bool *)newis3d;
+-(void)setis3d:(bool *)newis3d;
 {
     is3d=newis3d;
     
