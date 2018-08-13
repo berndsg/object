@@ -6,353 +6,362 @@ int main (int argc, const char * argv[]) {
     
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
     
-    NSString* filePath = @"Test.txt";
-    NSData* loadedData = [NSData dataWithContentsOfFile:filePath];
-    NSString* loadedString = [[NSString alloc]initWithData:loadedData encoding:NSUTF8StringEncoding];
+    //NSString* filePath = @"Test.txt";
+    //NSData* loadedData = [NSData dataWithContentsOfFile:filePath];
+    //NSString* loadedString = [[NSString alloc]initWithData:loadedData encoding:NSUTF8StringEncoding];
     
-	
+    NSMutableArray *movieArray;
+    movieArray = [NSMutableArray arrayWithCapacity:61];
 	//Movies
-	Movie * movie1 = [[Movie alloc]init];
-	[movie1 setTitle:@"Das A-Team"];
-	[movie1 setYear:@"2010"];
-	[movie1 setFormat:@"BD+Digital Copy"];
-	[movie1 setTime:@"Extended Cut 134 Min."];
-    [movie1 setis3d:YES];
+    // Klassische Schreibweise
+	Movie * movie = [[Movie alloc]init];
+	[movie setTitle:@"Das A-Team"];
+	[movie setYear:@"2010"];
+	[movie setFormat:@"BD+Digital Copy"];
+	[movie setTime:@"Extended Cut 134 Min."];
     
-	Movie * movie2 = [[Movie alloc]init];
-	[movie2 setTitle:@"Der Baader Meinhof Komplex"];
-	[movie2 setYear:@"2008"];
-	[movie2 setFormat:@"BD"];
-	[movie2 setTime:@"149 Min."];
-    [movie2 setis3d:YES];
-	
-	Movie * movie3 = [[Movie alloc]init];
-	[movie3 setTitle:@"Casino Royale"];
-	[movie3 setYear:@"2009"];
-	[movie3 setFormat:@"BD"];
-	[movie3 setTime:@"144 Min."];
-    [movie3 setis3d:YES];
-	
-	Movie * movie4 = [[Movie alloc]init];
-	[movie4 setTitle:@"Das Ding"];
-	[movie4 setYear:@"1982"];
-	[movie4 setFormat:@"BD"];
-	[movie4 setTime:@"uncut 109 Min."];
-    [movie4 setis3d:YES];
-	
-	Movie * movie5 = [[Movie alloc]init];
-	[movie5 setTitle:@"Gladiator"];
-	[movie5 setYear:@"2000"];
-	[movie5 setFormat:@"BD"];
-	[movie5 setTime:@"Ext.Vers. 170 Min."];
-	
-	Movie * movie6 = [[Movie alloc]init];
-	[movie6 setTitle:@"Hell"];
-	[movie6 setYear:@"2011"];
-	[movie6 setFormat:@"BD"];
-	[movie6 setTime:@"89 Min."];
-	
-	Movie * movie7 = [[Movie alloc]init];
-	[movie7 setTitle:@"I Am Legend"];
-	[movie7 setYear:@"2007"];
-	[movie7 setFormat:@"BD"];
-	[movie7 setTime:@"Alt.Ver. 104 Min."];
-	
-	Movie * movie8 = [[Movie alloc]init];
-	[movie8 setTitle:@"J.Edgar"];
-	[movie8 setYear:@"2011"];
-	[movie8 setFormat:@"BD"];
-	[movie8 setTime:@"137 Min."];
-	
-	Movie * movie9 = [[Movie alloc]init];
-	[movie9 setTitle:@"Land Of The Dead"];
-	[movie9 setYear:@"2009"];
-	[movie9 setFormat:@"BD"];
-	[movie9 setTime:@"97 Min."];
-	
-	Movie * movie10 = [[Movie alloc]init];
-	[movie10 setTitle:@"Oben"];
-	[movie10 setYear:@"2009"];
-	[movie10 setFormat:@"BD+Digital Copy"];
-	[movie10 setTime:@"96 Min."];
-	
-	Movie * movie11 = [[Movie alloc]init];
-	[movie11 setTitle:@"Predator"];
-	[movie11 setYear:@"1987"];
-	[movie11 setFormat:@"BD"];
-	[movie11 setTime:@"Ultimate Hunter Edition 107 Min."];
-	
-	Movie * movie12 = [[Movie alloc]init];
-	[movie12 setTitle:@"Predators"];
-	[movie12 setYear:@"2010"];
-	[movie12 setFormat:@"BD"];
-	[movie12 setTime:@"107 Min."];
-	
-	Movie * movie13 = [[Movie alloc]init];
-	[movie13 setTitle:@"2012"];
-	[movie13 setYear:@"2009"];
-	[movie13 setFormat:@"BD Steelbook"];
-	[movie13 setTime:@"158 Min."];
-	
-	Movie * movie14 = [[Movie alloc]init];
-	[movie14 setTitle:@"Akte X Der Film/Jenseits der Wahrheit"];
-	[movie14 setYear:@"1998/2009"];
-	[movie14 setFormat:@"BD 2-Filme-Set"];
-	[movie14 setTime:@"122/104 Min."];
-	
-	Movie * movie15 = [[Movie alloc]init];
-	[movie15 setTitle:@"The Book Of Eli"];
-	[movie15 setYear:@"2010"];
-	[movie15 setFormat:@"BD Steelbook Special Edition"];
-	[movie15 setTime:@"117 Min."];
-	
-	Movie * movie16 = [[Movie alloc]init];
-	[movie16 setTitle:@"Zombieland"];
-	[movie16 setYear:@"2009"];
-	[movie16 setFormat:@"BD Steelbook"];
-	[movie16 setTime:@"88 Min."];
-	
-	Movie * movie17 = [[Movie alloc]init];
-	[movie17 setTitle:@"Tron: Legacy"];
-	[movie17 setYear:@"2011"];
-	[movie17 setFormat:@"BD3D+BD Steelbook+Digital Copy"];
-	[movie17 setTime:@"125 Min."];
-	
-	Movie * movie18 = [[Movie alloc]init];
-	[movie18 setTitle:@"The Thing"];
-	[movie18 setYear:@"2011"];
-	[movie18 setFormat:@"BD 3D+BD Steelbook+Digital Copy"];
-	[movie18 setTime:@"103 Min."];
-	
-	Movie * movie19 = [[Movie alloc]init];
-	[movie19 setTitle:@"Terminator 3"];
-	[movie19 setYear:@"2003"];
-	[movie19 setFormat:@"BD Steelbook"];
-	[movie19 setTime:@"109 Min."];
-	
-	Movie * movie20 = [[Movie alloc]init];
-	[movie20 setTitle:@"Super 8"];
-	[movie20 setYear:@"2011"];
-	[movie20 setFormat:@"BD Steelbook+DVD+Digital Copy"];
-	[movie20 setTime:@"112 Min."];
-	
-	Movie * movie21 = [[Movie alloc]init];
-	[movie21 setTitle:@"Inglourious Basterds"];
-	[movie21 setYear:@"2009"];
-	[movie21 setFormat:@"BD Steelbook"];
-	[movie21 setTime:@"154 Min."];
-	
-	Movie * movie22 = [[Movie alloc]init];
-	[movie22 setTitle:@"Inception"];
-	[movie22 setYear:@"2010"];
-	[movie22 setFormat:@"BD Steelbook"];
-	[movie22 setTime:@"148 Min."];
-	
-	Movie * movie23 = [[Movie alloc]init];
-	[movie23 setTitle:@"The Wrestler"];
-	[movie23 setYear:@"2009"];
-	[movie23 setFormat:@"BD"];
-	[movie23 setTime:@"109 Min."];
-	
-	Movie * movie24 = [[Movie alloc]init];
-	[movie24 setTitle:@"Gamer"];
-	[movie24 setYear:@"2010"];
-	[movie24 setFormat:@"BD Steelbook"];
-	[movie24 setTime:@"94 Min."];
-	
-	Movie * movie25 = [[Movie alloc]init];
-	[movie25 setTitle:@"The Expendables"];
-	[movie25 setYear:@"2011"];
-	[movie25 setFormat:@"BD Steelbook"];
-	[movie25 setTime:@"104 Min."];
-	
-	Movie * movie26 = [[Movie alloc]init];
-	[movie26 setTitle:@"Star Wars The Clone Wars Zweite Staffel"];
-	[movie26 setYear:@"2010"];
-	[movie26 setFormat:@"BD"];
-	[movie26 setTime:@"22 Episoden 484 Min."];
-	
-	Movie * movie27 = [[Movie alloc]init];
-	[movie27 setTitle:@"Star Wars The Clone Wars Erste Staffel"];
-	[movie27 setYear:@"2009"];
-	[movie27 setFormat:@"BD"];
-	[movie27 setTime:@"22 Episoden 502 Min."];
-	
-	Movie * movie28 = [[Movie alloc]init];
-	[movie28 setTitle:@"Star Wars The Clone Wars Dritte Staffel"];
-	[movie28 setYear:@"2011"];
-	[movie28 setFormat:@"BD"];
-	[movie28 setTime:@"22 Episoden 487 Min."];
-	
-	Movie * movie29 = [[Movie alloc]init];
-	[movie29 setTitle:@"Apokalypse Now Redux"];
-	[movie29 setYear:@"1979/2000"];
-	[movie29 setFormat:@"BD 3 Disc Deluxe Edition"];
-	[movie29 setTime:@"153/202 Min."];
-	
-	Movie * movie30 = [[Movie alloc]init];
-	[movie30 setTitle:@"Star Wars The Clone Wars (Film)"];
-	[movie30 setYear:@"2008"];
-	[movie30 setFormat:@"BD"];
-	[movie30 setTime:@"98 Min."];
-	
-	Movie * movie31 = [[Movie alloc]init];
-	[movie31 setTitle:@"Star Wars The Complete Saga"];
-	[movie31 setYear:@"2011"];
-	[movie31 setFormat:@"BD 9 Discs"];
-	[movie31 setTime:@"805 Min. (nur Filme)"];
-	
-	Movie * movie32 = [[Movie alloc]init];
-	[movie32 setTitle:@"Die Abenteuer von Tim und Struppi Das Geheimnis der Einhorn"];
-	[movie32 setYear:@"2011"];
-	[movie32 setFormat:@"BD"];
-	[movie32 setTime:@"107 Min."];
-	
-	Movie * movie33 = [[Movie alloc]init];
-	[movie33 setTitle:@"Der unglaubliche Hulk"];
-	[movie33 setYear:@"2008"];
-	[movie33 setFormat:@"BD"];
-	[movie33 setTime:@"112 Min."];
+    [movieArray addObject:movie];
+    
+    // Punktnotation
+    Movie *movie2 = [Movie new];
+	movie2.title = @"Der Baader Meinhof Komplex";
+	movie2.year = @"2008";
+	movie2.format = @"BD";
+    movie2.time = @"149 Min.";
+    
+    [movieArray addObject:movie2];
 
-	Movie * movie34 = [[Movie alloc]init];
-	[movie34 setTitle:@"Captain America"];
-	[movie34 setYear:@"2011"];
-	[movie34 setFormat:@"BD+Digital Copy"];
-	[movie34 setTime:@"124 Min."];
+    movie = [[Movie alloc]init];
+	[movie setTitle:@"Casino Royale"];
+	[movie setYear:@"2009"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"144 Min."];
+	[movieArray addObject:movie];
+    
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Das Ding"];
+	[movie setYear:@"1982"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"uncut 109 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Gladiator"];
+	[movie setYear:@"2000"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"Ext.Vers. 170 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Hell"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"89 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"I Am Legend"];
+	[movie setYear:@"2007"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"Alt.Ver. 104 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"J.Edgar"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"137 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Land Of The Dead"];
+	[movie setYear:@"2009"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"97 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Oben"];
+	[movie setYear:@"2009"];
+	[movie setFormat:@"BD+Digital Copy"];
+	[movie setTime:@"96 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Predator"];
+	[movie setYear:@"1987"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"Ultimate Hunter Edition 107 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Predators"];
+	[movie setYear:@"2010"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"107 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"2012"];
+	[movie setYear:@"2009"];
+	[movie setFormat:@"BD Steelbook"];
+	[movie setTime:@"158 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Akte X Der Film/Jenseits der Wahrheit"];
+	[movie setYear:@"1998/2009"];
+	[movie setFormat:@"BD 2-Filme-Set"];
+	[movie setTime:@"122/104 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"The Book Of Eli"];
+	[movie setYear:@"2010"];
+	[movie setFormat:@"BD Steelbook Special Edition"];
+	[movie setTime:@"117 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Zombieland"];
+	[movie setYear:@"2009"];
+	[movie setFormat:@"BD Steelbook"];
+	[movie setTime:@"88 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Tron: Legacy"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD3D+BD Steelbook+Digital Copy"];
+	[movie setTime:@"125 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"The Thing"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD 3D+BD Steelbook+Digital Copy"];
+	[movie setTime:@"103 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Terminator 3"];
+	[movie setYear:@"2003"];
+	[movie setFormat:@"BD Steelbook"];
+	[movie setTime:@"109 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Super 8"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD Steelbook+DVD+Digital Copy"];
+	[movie setTime:@"112 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Inglourious Basterds"];
+	[movie setYear:@"2009"];
+	[movie setFormat:@"BD Steelbook"];
+	[movie setTime:@"154 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Inception"];
+	[movie setYear:@"2010"];
+	[movie setFormat:@"BD Steelbook"];
+	[movie setTime:@"148 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"The Wrestler"];
+	[movie setYear:@"2009"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"109 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Gamer"];
+	[movie setYear:@"2010"];
+	[movie setFormat:@"BD Steelbook"];
+	[movie setTime:@"94 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"The Expendables"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD Steelbook"];
+	[movie setTime:@"104 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Star Wars The Clone Wars Zweite Staffel"];
+	[movie setYear:@"2010"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"22 Episoden 484 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Star Wars The Clone Wars Erste Staffel"];
+	[movie setYear:@"2009"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"22 Episoden 502 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Star Wars The Clone Wars Dritte Staffel"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"22 Episoden 487 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Apokalypse Now Redux"];
+	[movie setYear:@"1979/2000"];
+	[movie setFormat:@"BD 3 Disc Deluxe Edition"];
+	[movie setTime:@"153/202 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Star Wars The Clone Wars (Film)"];
+	[movie setYear:@"2008"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"98 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Star Wars The Complete Saga"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD 9 Discs"];
+	[movie setTime:@"805 Min. (nur Filme)"];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Die Abenteuer von Tim und Struppi Das Geheimnis der Einhorn"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"107 Min."];
+	[movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Der unglaubliche Hulk"];
+	[movie setYear:@"2008"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"112 Min."];
+    [movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Captain America"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD+Digital Copy"];
+	[movie setTime:@"124 Min."];
+    [movieArray addObject:movie];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Spider-Man 3"];
+	[movie setYear:@"2007"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"139 Min."];
+    [movieArray addObject:movie];
 
-	Movie * movie35 = [[Movie alloc]init];
-	[movie35 setTitle:@"Spider-Man 3"];
-	[movie35 setYear:@"2007"];
-	[movie35 setFormat:@"BD"];
-	[movie35 setTime:@"139 Min."];
-
-	Movie * movie36 = [[Movie alloc]init];
-	[movie36 setTitle:@"Batman Begins"];
-	[movie36 setYear:@"2005"];
-	[movie36 setFormat:@"BD"];
-	[movie36 setTime:@"140 Min."];
-
-	Movie * movie37 = [[Movie alloc]init];
-	[movie37 setTitle:@"The Dark Knight"];
-	[movie37 setYear:@"2008"];
-	[movie37 setFormat:@"BD"];
-	[movie37 setTime:@"153 Min."];
-
-	Movie * movie38 = [[Movie alloc]init];
-	[movie38 setTitle:@"Green Lantern"];
-	[movie38 setYear:@"2011"];
-	[movie38 setFormat:@"BD"];
-	[movie38 setTime:@"Extended 123 Min."];
-
-	Movie * movie39 = [[Movie alloc]init];
-	[movie39 setTitle:@"Tron"];
-	[movie39 setYear:@"1982/2011"];
-	[movie39 setFormat:@"BD"];
-	[movie39 setTime:@"96 Min."];
-
-	Movie * movie40 = [[Movie alloc]init];
-	[movie40 setTitle:@"Thor"];
-	[movie40 setYear:@"2011"];
-	[movie40 setFormat:@"BD+Digital Copy"];
-	[movie40 setTime:@"115 Min."];
-
-	Movie * movie41 = [[Movie alloc]init];
-	[movie41 setTitle:@"John Rambo"];
-	[movie41 setYear:@"2008"];
-	[movie41 setFormat:@"BD"];
-	[movie41 setTime:@"89 Min."];
 	
-	Movie * movie42 = [[Movie alloc]init];
-	[movie42 setTitle:@"Terminator Die Erlösung"];
-	[movie42 setYear:@"2009"];
-	[movie42 setFormat:@"BD"];
-	[movie42 setTime:@"118 Min."];
-    
-    Movie * movie43 = [[Movie alloc]init];
-    [movie43 setTitle: @"Prometheus"];
-    
-    Movie * movie44 = [[Movie alloc]init];
-    [movie44 setTitle:@"Deadpool"];
-    [movie44 setYear:@"2016"];
-    [movie44 setFormat:@"BD"];
-    [movie44 setTime:@"108 Min."];
-    
-    Movie * movie45 = [[Movie alloc]init];
-    [movie45 setTitle:@"Terminator"];
-    [movie45 setYear:@"1984"];
-    [movie45 setFormat:@"BD Steelbook"];
-    
-    Movie * movie46 = [[Movie alloc]init];
-    [movie46 setTitle:@"Hobbit Die Schlacht der fünf Heere"];
-    [movie46 setYear:@"2014"];
-    [movie46 setFormat:@"BD Steelbook"];
-    
-    Movie * movie47 = [[Movie alloc]init];
-    [movie47 setTitle:@"Star Wars - Das Erwachen der Macht"];
-    [movie47 setYear:@"2015"];
-    [movie47 setFormat:@"BD Steelbook"];
-    
-    Movie * movie48 = [[Movie alloc]init];
-    [movie48 setTitle:@"Mad Max Fury Road"];
-    [movie48 setYear:@"2015"];
-    [movie48 setFormat:@"BD Steelbook"];
-    
-    Movie * movie49 = [[Movie alloc]init];
-    [movie49 setTitle:@"Der weisse Hai"];
-    [movie49 setYear:@"1975"];
-    [movie49 setFormat:@"BD Steelbook"];
-    
-    Movie * movie50 = [[Movie alloc]init];
-    [movie50 setTitle:@"The Hateful 8"];
-    [movie50 setYear:@"2015"];
-    [movie50 setFormat:@"BD"];
-    
-    Movie * movie51 = [[Movie alloc]init];
-    [movie51 setTitle:@"The Revenant"];
-    [movie51 setYear:@"2015"];
-    [movie51 setFormat:@"BD"];
-    [movie51 setTime:@"156 Minuten"];
-    
-    Movie * movie52 = [[Movie alloc]init];
-    [movie52 setTitle:@"Zoomania"];
-    [movie52 setYear:@"2016"];
-    [movie52 setFormat:@"BD"];
-    [movie52 setTime:@"108 Minuten"];
-    
-    Movie * movie53 = [[Movie alloc]init];
-    [movie53 setTitle:@"Spectre"];
-    [movie53 setYear:@"2015"];
-    [movie53 setFormat:@"BD"];
-    [movie53 setTime:@"148 Minuten"];
-    
-    Movie * movie54 = [[Movie alloc]init];
-    [movie54 setTitle:@"Ghostbusters 1&2"];
-    [movie54 setYear:@"1984, 1989"];
-    [movie54 setFormat:@"BD"];
-    [movie54 setTime:@" 105/108 Minuten"];
-    
-    Movie * movie55 = [[Movie alloc]init];
-    [movie55 setTitle:@"Steve Jobs"];
-    [movie55 setYear:@"2015"];
-    [movie55 setFormat:@"BD"];
-    
-    Movie * movie56 = [[Movie alloc]init];
-    [movie56 setTitle:@"Jurassic Park Collection"];
-    [movie56 setFormat:@"BD Box"];
-    
-    Movie * movie57 = [[Movie alloc]init];
-    [movie57 setTitle:@"Jurassic World"];
-    [movie57 setYear:@"2016"];
-    [movie57 setFormat:@"BD"];
+    movie = [[Movie alloc]init];
+	[movie setTitle:@"Batman Begins"];
+	[movie setYear:@"2005"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"140 Min."];
+    [movieArray addObject:movie];
 
-	NSArray *array = [NSArray arrayWithObjects:movie1, movie2, movie3,movie4, movie5, movie6, movie7, movie8, movie9, 
-					  movie10, movie11, movie12, movie13, movie14, movie15, movie16, movie17, movie18, movie19,
-					  movie20, movie21, movie22, movie23, movie24, movie25, movie26, movie27, movie28, movie29,
-					  movie30, movie31, movie32, movie33, movie34, movie35, movie36, movie37, movie38, movie39,
-					  movie40, movie41, movie42, movie43, movie44, movie45, movie46, movie47, movie48, movie49,
-                      movie50, movie51, movie52, movie53, movie54, movie55, movie56, movie57, nil ];
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"The Dark Knight"];
+	[movie setYear:@"2008"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"153 Min."];
+    [movieArray addObject:movie];
+
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Green Lantern"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"Extended 123 Min."];
+    [movieArray addObject:movie];
+
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Tron"];
+	[movie setYear:@"1982/2011"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"96 Min."];
+    [movieArray addObject:movie];
+
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Thor"];
+	[movie setYear:@"2011"];
+	[movie setFormat:@"BD+Digital Copy"];
+	[movie setTime:@"115 Min."];
+    [movieArray addObject:movie];
+
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"John Rambo"];
+	[movie setYear:@"2008"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"89 Min."];
+    [movieArray addObject:movie];
+	
+	movie = [[Movie alloc]init];
+	[movie setTitle:@"Terminator Die Erlösung"];
+	[movie setYear:@"2009"];
+	[movie setFormat:@"BD"];
+	[movie setTime:@"118 Min."];
+    [movieArray addObject:movie];
     
-	for (NSString *element in array) {
+    movie = [[Movie alloc]init];
+    [movie setTitle: @"Prometheus"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Deadpool"];
+    [movie setYear:@"2016"];
+    [movie setFormat:@"BD"];
+    [movie setTime:@"108 Min."];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Terminator"];
+    [movie setYear:@"1984"];
+    [movie setFormat:@"BD Steelbook"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Hobbit Die Schlacht der fünf Heere"];
+    [movie setYear:@"2014"];
+    [movie setFormat:@"BD Steelbook"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Star Wars - Das Erwachen der Macht"];
+    [movie setYear:@"2015"];
+    [movie setFormat:@"BD Steelbook"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Mad Max Fury Road"];
+    [movie setYear:@"2015"];
+    [movie setFormat:@"BD Steelbook"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Der weisse Hai"];
+    [movie setYear:@"1975"];
+    [movie setFormat:@"BD Steelbook"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"The Hateful 8"];
+    [movie setYear:@"2015"];
+    [movie setFormat:@"BD"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"The Revenant"];
+    [movie setYear:@"2015"];
+    [movie setFormat:@"BD"];
+    [movie setTime:@"156 Minuten"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Zoomania"];
+    [movie setYear:@"2016"];
+    [movie setFormat:@"BD"];
+    [movie setTime:@"108 Minuten"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Spectre"];
+    [movie setYear:@"2015"];
+    [movie setFormat:@"BD"];
+    [movie setTime:@"148 Minuten"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Ghostbusters 1&2"];
+    [movie setYear:@"1984, 1989"];
+    [movie setFormat:@"BD"];
+    [movie setTime:@" 105/108 Minuten"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Steve Jobs"];
+    [movie setYear:@"2015"];
+    [movie setFormat:@"BD"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Jurassic Park Collection"];
+    [movie setFormat:@"BD Box"];
+    [movieArray addObject:movie];
+    movie = [[Movie alloc]init];
+    [movie setTitle:@"Jurassic World"];
+    [movie setYear:@"2016"];
+    [movie setFormat:@"BD"];
+    [movieArray addObject:movie];
+    
+	
+    
+	for (NSString *element in movieArray) {
 		NSLog(@"Movie: %@", element);
         //NSData* test = [NSData dataWithContentsOfFile:element];
         //[test writeToFile:fileWritePath atomically:YES];

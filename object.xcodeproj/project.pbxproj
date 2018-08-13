@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7316E101159783CA00BA4A0D /* hmg.m in Sources */ = {isa = PBXBuildFile; fileRef = 7316E100159783CA00BA4A0D /* hmg.m */; };
 		7366777715A817F1005FE552 /* movies.m in Sources */ = {isa = PBXBuildFile; fileRef = 7366777615A817F1005FE552 /* movies.m */; };
-		736C48601A6C5AB3008AFA29 /* movies_new.m in Sources */ = {isa = PBXBuildFile; fileRef = 736C485F1A6C5AB3008AFA29 /* movies_new.m */; };
 		7378CBC0120C8C24004DC8C7 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 7378CBBF120C8C24004DC8C7 /* Song.m */; };
 		737CB09C15FFC10E00AFA8C5 /* lebensmittel.m in Sources */ = {isa = PBXBuildFile; fileRef = 737CB09B15FFC10E00AFA8C5 /* lebensmittel.m */; };
 		8DD76F9A0486AA7600D96B5E /* object.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* object.m */; settings = {ATTRIBUTES = (); }; };
@@ -38,8 +37,6 @@
 		7316E100159783CA00BA4A0D /* hmg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hmg.m; sourceTree = "<group>"; };
 		7366777515A817F1005FE552 /* movies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movies.h; sourceTree = "<group>"; };
 		7366777615A817F1005FE552 /* movies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = movies.m; sourceTree = "<group>"; };
-		736C485E1A6C5AB3008AFA29 /* movies_new.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movies_new.h; sourceTree = "<group>"; };
-		736C485F1A6C5AB3008AFA29 /* movies_new.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = movies_new.m; sourceTree = "<group>"; };
 		7378CBBE120C8C24004DC8C7 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
 		7378CBBF120C8C24004DC8C7 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
 		737CB09A15FFC10E00AFA8C5 /* lebensmittel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lebensmittel.h; sourceTree = "<group>"; };
@@ -86,8 +83,6 @@
 				32A70AAB03705E1F00C91783 /* object_Prefix.pch */,
 				08FB7796FE84155DC02AAC07 /* object.m */,
 				73B676DA1A71A08100190F8F /* Test.txt */,
-				736C485E1A6C5AB3008AFA29 /* movies_new.h */,
-				736C485F1A6C5AB3008AFA29 /* movies_new.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -143,7 +138,7 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "object" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -171,7 +166,6 @@
 				7316E101159783CA00BA4A0D /* hmg.m in Sources */,
 				7366777715A817F1005FE552 /* movies.m in Sources */,
 				737CB09C15FFC10E00AFA8C5 /* lebensmittel.m in Sources */,
-				736C48601A6C5AB3008AFA29 /* movies_new.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +204,29 @@
 		1DEB927908733DD40010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
@@ -221,7 +237,28 @@
 		1DEB927A08733DD40010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
